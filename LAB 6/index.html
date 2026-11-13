@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Student Registration</h1>
+
+    <form id="registrationForm" novalidate>
+      <div class="field">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName">
+        <p id="nameCounter" class="hint"></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone (9 digits)</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+      </div>
+
+      <div class="field">
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+      </div>
+
+      <div class="field">
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="">-- choose a city --</option>
+          <option value="Tashkent">Tashkent</option>
+          <option value="Samarkand">Samarkand</option>
+          <option value="Bukhara">Bukhara</option>
+          <option value="Nukus">Nukus</option>
+          <option value="Andijan">Andijan</option>
+        </select>
+        <p id="cityOutput" class="hint"></p>
+      </div>
+
+      <ul id="errorList" class="errors"></ul>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+</body>
+</html>
